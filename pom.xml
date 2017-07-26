@@ -1,18 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.amazonaws</groupId>
     <artifactId>kinesis-storm-spout</artifactId>
     <packaging>jar</packaging>
     <name>Amazon Kinesis Storm Spout for Java</name>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.2.0-trulia</version>
     <description> The Amazon Kinesis Storm Spout helps Java developers integrate Amazon Kinesis with Storm.</description>
     <url>https://aws.amazon.com/kinesis</url>
-
-    <scm>
-        <url>https://github.com/awslabs/kinesis-storm-spout.git</url>
-    </scm>
 
     <licenses>
         <license>
@@ -119,21 +113,6 @@
               <id>attach-sources</id>
               <goals>
                 <goal>jar</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-gpg-plugin</artifactId>
-          <version>1.4</version>
-          <executions>
-            <execution>
-              <id>sign-artifacts</id>
-              <phase>verify</phase>
-              <goals>
-                <goal>sign</goal>
               </goals>
             </execution>
           </executions>
